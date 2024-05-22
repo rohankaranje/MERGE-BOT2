@@ -7,7 +7,7 @@ class Config(object):
     TELEGRAM_API = os.environ.get("TELEGRAM_API",'15630493')
     OWNER = os.environ.get("OWNER", "1315497648")
     OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "vedu")
-    PASSWORD = os.environ.get("PASSWORD")
+    PASSWORD = os.environ.get("PASSWORD", None)
     DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://test:test@cluster0.47luuoj.mongodb.net/?retryWrites=true&w=majority")
     LOGCHANNEL = os.environ.get("LOGCHANNEL", '-1002138249832')  # Add channel id as -100 + Actual ID
     GDRIVE_FOLDER_ID = os.environ.get("GDRIVE_FOLDER_ID", "root")
